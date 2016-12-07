@@ -74,7 +74,7 @@ function gen_link($content)
         
     }
     //output
-    return json_encode($res, JSON_PRETTY_PRINT);
+    return json_encode($res, JSON_PRETTY_PRINT|JSON_UNESCAPED_UNICODE|JSON_UNESCAPED_SLASHES);
 }
 //akhir fungsi gen link
 $url = $_GET['url'];
